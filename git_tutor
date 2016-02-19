@@ -1,0 +1,64 @@
+git 
+git config --global user.name ""
+git config --global user.email ""
+git config --global core.autocrlf false
+
+create repository:
+git init
+
+add to git buffer:
+git add
+
+add file to repository:
+git commit -m 'description'
+
+git log
+
+back to the previous version:
+git reset --hard HEAD^
+
+check the HEAD of every version:
+git reflog
+
+go to your self define version:
+git reset --hard version_number
+
+work area change but want to undo it and this operation is before 'git add':
+git checkout -- filename
+
+push loacl file to remote github:
+git remote add origin https://github.com/m8k7j/testgit.git
+git push -u origin master
+git push origin master
+git push origin dev
+
+git clone from remote to local:
+git clone https://github.com/m8k7j/myblog.git
+
+git switch and create branch version:
+git checkout -b dev
+
+merge dev to master:
+git checkout dev
+add some operation
+git checkout master
+git merge dev
+
+delete branch:
+git branch -d dev
+
+summerize of branch:
+show branch:  git branch
+create branch: git branch name
+
+git checkout -b dev origin/dev
+switch branch: git checkout name
+create+switch: git checkout -b name
+delete branch: git branch -d name
+
+git merge --no-ff -m 'merge with no-ff'
+git stash                              save work for the time
+
+
+
+
